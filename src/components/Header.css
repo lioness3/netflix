@@ -24,6 +24,7 @@ right: 20px;
 align-items: center;
 }
 
+
 .headerLeft a {
 text-decoration: none;
 position: relative;
@@ -40,10 +41,70 @@ font-size: 20px;
 color: white
 }
 
-.headerRight button {
+.headerRight button, .headerRight label {
 position: relative;
 padding: 0 10px;
 border: none;
 font-size: 20px;
 background-color: inherit;
+}
+
+.suggestionDrop {
+  position: relative;
+  display: inline-block;
+}
+
+.suggestionDrop .dropdown-content{
+  display:none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  min-width: 160px;
+  z-index: 1;
+  right: 1px;
+}
+
+.suggestionDrop:hover .dropdown-content{
+  display: block;
+}
+
+ .dropdown-content{
+  background: rgba(76, 175, 80, 0.3);
+  color: white;
+}
+
+.extand {
+  width: 10%;
+  box-sizing: border-box;
+  border: none;
+  font-size: 16px;
+  background: black;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  transform:translateX(-80%);
+}
+
+.extand:focus {
+  width: 100%;
+  background: white;
+}
+.extand:focus + span{
+  display:none;
+}
+.searchBox {
+  float: left;
+
+  position: relative;
+  pointer-events: none;
+  top: 26px;
+  left: 8px;
+  color: white;
+  z-index: 2;
+}
+.headerRight form{
+  position:relative;
+  right:50px;
+  top:30px;
 }
