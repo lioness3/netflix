@@ -1,0 +1,44 @@
+.logo {
+  height: 80px;
+  width: 150px;
+  padding: 3px;
+}
+
+.header {
+  height: 100px;
+  width: 100vw;
+}
+
+.headerLeft {
+float: left;
+position: absolute;
+
+}
+
+.headerRight {
+float: right;
+position: relative;
+top: 30px;
+right: 20px;
+}
+
+.headerLeft a {
+text-decoration: none;
+position: relative;
+top: -35px;
+padding: 0 10px;
+}
+
+.headerRight a {
+text-decoration: none;
+position: relative;
+padding: 0 10px;
+font-size: 20px;
+}
+
+.headerRight button {
+position: relative;
+padding: 0 10px;
+border: none;
+font-size: 20px;
+}
