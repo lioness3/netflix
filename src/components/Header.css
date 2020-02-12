@@ -17,9 +17,11 @@ position: absolute;
 
 .headerRight {
 float: right;
-position: relative;
+position: absolute;
+justify-content: flex-end;
 top: 30px;
 right: 20px;
+align-items: center;
 }
 
 .headerLeft a {
@@ -27,6 +29,7 @@ text-decoration: none;
 position: relative;
 top: -35px;
 padding: 0 10px;
+color: white;
 }
 
 .headerRight a {
@@ -34,6 +37,7 @@ text-decoration: none;
 position: relative;
 padding: 0 10px;
 font-size: 20px;
+color: white
 }
 
 .headerRight button {
@@ -41,4 +45,5 @@ position: relative;
 padding: 0 10px;
 border: none;
 font-size: 20px;
+background-color: inherit;
 }

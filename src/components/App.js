@@ -2,10 +2,14 @@ import React from 'react';
 import Header from './Header';
 import { Switch, Route, Link } from 'react-router-dom';
 import Home from './Home';
+import './App.css';
 import TvShows from './TvShows';
 import Movies from './Movies';
 import Latest from './Latest';
 import MyList from './MyList';
+import ReferFriends from './ReferFriends';
+import Kids from './Kids';
+import Dvd from './Dvd';
 
 function App() {
   return (
@@ -17,6 +21,11 @@ function App() {
 <Route exact path='/34399' component={Movies} />
 <Route exact path='/latest' component={Latest} />
 <Route exact path='/my-list' component={MyList} />
+
+<Route exact path='/refer-friends' component={ReferFriends} />
+<Route exact path='/kids' component={Kids} />
+<Route exact path='/Subscribe/EnableDvd/Address?dsrc=STRWEB_NAV' component={Dvd} />
+
 </Switch>
     </div>
   );
