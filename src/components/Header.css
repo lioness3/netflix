@@ -7,15 +7,17 @@
 .header {
   height: 100px;
   width: 100vw;
+  position: absolute;
+  z-index: 1;
 }
 
 .headerLeft {
 float: left;
 position: absolute;
-
 }
 
 .headerRight {
+
 float: right;
 position: absolute;
 justify-content: flex-end;
@@ -69,7 +71,7 @@ background-color: inherit;
 }
 
  .dropdown-content{
-  background: rgba(76, 175, 80, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   color: white;
 }
 
@@ -78,7 +80,7 @@ background-color: inherit;
   box-sizing: border-box;
   border: none;
   font-size: 16px;
-  background: black;
+  background: inherit;
   background-position: 10px 10px;
   background-repeat: no-repeat;
   -webkit-transition: width 0.4s ease-in-out;

@@ -10,6 +10,7 @@ import MyList from './MyList';
 import ReferFriends from './ReferFriends';
 import Kids from './Kids';
 import Dvd from './Dvd';
+import Billboard from './Billboard';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
 <Route exact path='/Subscribe/EnableDvd/Address?dsrc=STRWEB_NAV' component={Dvd} />
 
 </Switch>
+<Billboard/>
     </div>
   );
 }
